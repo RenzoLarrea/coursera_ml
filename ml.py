@@ -36,8 +36,6 @@ model3.fit(decisiontreeX_train, y_train)
 y_predictions = model3.predict(decisiontreeX_test)
 mape = mean_absolute_percentage_error(y_test, y_predictions)
 
-model1.fit(X_train, y_train)
-y_predictionsnew = model1.predict(X_test)
 print(f"Final MAPE from test: {mape:.2%}")
 x = y
 plt.scatter(y_predictions, y_test)
